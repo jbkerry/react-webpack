@@ -11,8 +11,20 @@ module.exports = {
     filename: '[name].js',
     path: path.resolve(__dirname, 'dist')
   },
+  resolve: {
+    extensions: ['.js', '.jsx']
+  },
+  devServer: {
+    contentBase: './dist'
+  },
   module: {
     rules: [
+      {
+        enforce: 'pre',
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        loader: 'eslint-loader'
+      },
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
