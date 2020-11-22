@@ -2,6 +2,7 @@ module.exports = {
   env: {
     browser: true,
     es2020: true,
+    jest: true,
   },
   extends: [
     'plugin:react/recommended',
@@ -18,8 +19,9 @@ module.exports = {
     'react',
   ],
   rules: {
-    "max-len": ["error", { "code": 120, "tabWidth": 2 }],
-    "react/jsx-one-expression-per-line": "off",
-    "arrow-parens": [2, "as-needed"]
+    'max-len': [2, { code: 120, tabWidth: 2 }],
+    'react/jsx-one-expression-per-line': 'off',
+    'arrow-parens': [2, 'as-needed'],
+    // quotes: [2, 'single'],
   },
 };
