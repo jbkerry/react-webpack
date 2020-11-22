@@ -2,6 +2,10 @@
   "name": "react-webpack",
   "version": "1.0.0",
   "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jbkerry/react-webpack.git"
+  },
   "main": "src/index.jsx",
   "scripts": {
     "start": "webpack-dev-server --open",
